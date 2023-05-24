@@ -1,0 +1,26 @@
+1.
+class movies {
+  constructor(Name = " ",studio = " ",Rating = " " ) {
+    this.Name = Name;
+    this.studio = studio; 
+    this.Rating = Rating || PG;
+     
+  }
+ getPG(data=[],Rating = "PG"){
+    return data.filter((d)=> d.Rating===Rating)
+ }
+} 
+const movielist = new movies();
+
+var moviehub = [
+  	new movies("intersteller","Dc", "PG"),
+  	new movies("inception","walklight", "PG"),
+  	new movies("prometheus","bluebulb", "PG"),
+  	new movies("american pcyco","american", "PG13"),
+  	new movies("Madmax the fury road","criminal", "PG13"),
+  	new movies("oppenheimer","nolen", "PG13"),
+  	new movies("casino royal","Eon production", "PG13")
+];
+
+console.log(movielist.getPG(moviehub))
+2.
