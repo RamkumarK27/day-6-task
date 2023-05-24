@@ -1,4 +1,5 @@
-1.
+1.https://github.com/rvsp/typescript-oops/blob/master/Practice/Movie.md
+
 class movies {
   constructor(Name = " ",studio = " ",Rating = " " ) {
     this.Name = Name;
@@ -23,4 +24,41 @@ var moviehub = [
 ];
 
 console.log(movielist.getPG(moviehub))
-2.
+
+3.Write a “person” class to hold all the details.
+
+class person {
+constructor(wallet,mobile,headset,dresses ){
+    this.wallet = wallet;
+    this.mobile = mobile;
+    this.headset = headset;
+    this.dresses = dresses;
+    
+}
+personalitems(){
+  console.log(
+  `this is your ${this.wallet},
+   this is your ${this.mobile},
+   this is your ${this.headset},
+   this is your ${this.dresses}`);
+}
+
+}
+var person1=new person("cash","xiaomi 11i","brand new head set","denim shirt");
+person1.personalitems();
+
+4.write a class to calculate the uber price.
+
+class uberprice{
+constructor(kilometer, price){
+this.kilometer = kilometer;
+this.price = price;
+}
+kilometerprice(){
+console.log(this.kilometer * this.price)
+}
+}
+var totalprice = new uberprice(100,5)
+totalprice.kilometerprice();
+
+
